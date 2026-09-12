@@ -8,7 +8,7 @@ from datetime import datetime
 # --- CONFIGURATION ---
 PORT = 'COM6' #Check your device manager for the correct COM port
 BAUD_RATE = 9600
-CSV_FILE = f'{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}_log.csv'# Not sure of this works. Use the bottom line if it doesn't XD
+CSV_FILE = f'{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}_log.csv'# Not sure if this works. Use the bottom line if it doesn't XD
 # CSV_FILE = 'data_log.csv'
 
 def main():
