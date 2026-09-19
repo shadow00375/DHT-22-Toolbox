@@ -23,7 +23,7 @@ The `Humidity_sensor.ino` sketch was built using the Arduino IDE with the follow
 
 The `DHT-22_Data_logger.py` script requires the following Python package:
 
-- **PySerial** (v3.5 was used for development)
+- **PySerial** (v3.5 was used)
 
 ## Usage
 
