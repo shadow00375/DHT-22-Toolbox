@@ -28,13 +28,16 @@ The `DHT-22_Data_logger.py` script requires the following Python package:
 ## Usage
 
 1.  **Upload the Arduino Sketch:**
-    Open `Humidity_sensor.ino` in the Arduino IDE and upload it to your Arduino UNO board.
+    Open `Humidity_sensor.ino` in the Arduino IDE and upload it to your Arduino board. An Arduino UNO is preferred, but other compatible boards should also work.
 
-2.  **Run the Data Logger:**
+2.  **Check the Serial Port:**
+    Determine which port the Arduino is connected to (e.g., COM3, COM4, `/dev/ttyUSB0`, etc.) and modify the `SERIAL_PORT` variable in `DHT-22_Data_logger.py` accordingly.
+
+3.  **Run the Data Logger:**
     Execute the `DHT-22_Data_logger.py` script to begin logging data. The script will read serial data from the Arduino and write the recorded measurements to a `.csv` file.
-
+    
 ## Note on the Pre-compiled Executable
-As I was carrying out the measurement on the borrowed laptop from another lab, which did not install python and not to mention the corresponding libraries, I assembled **DHT-22_Data_logger.exe** with 'PyInstaller'. >_> <br>
+As I was carrying out the measurement on the borrowed laptop from another lab, which did not install python and not to mention the corresponding libraries, I assembled **DHT-22_Data_logger.exe** with **PyInstaller**. >_> <br>
 However a problem that comes with this is that I cannot access the code easily anymore. TAT <br>
 **I hard-coded SERIAL_PORT at "COM4"** but just use 'DHT-22_Data_logger.py' if things goes wrong and change port number there...
 
